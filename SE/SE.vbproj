@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50347E93-95FB-4547-95D9-EB86ADB8F3C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SE.My.MyApplication</StartupObject>
+    <RootNamespace>SE</RootNamespace>
+    <AssemblyName>SE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminform.Designer.vb">
+      <DependentUpon>Adminform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatbotForm.Designer.vb">
+      <DependentUpon>ChatbotForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChatbotForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentTypeForm.Designer.vb">
+      <DependentUpon>EquipmentTypeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentTypeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeform.Designer.vb">
+      <DependentUpon>homeform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="homeform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginform.Designer.vb">
+      <DependentUpon>Loginform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loginform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profileform.Designer.vb">
+      <DependentUpon>Profileform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profileform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaquetForm.Designer.vb">
+      <DependentUpon>RaquetForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RaquetForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrationform.Designer.vb">
+      <DependentUpon>Registrationform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrationform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShuttleForm.Designer.vb">
+      <DependentUpon>ShuttleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShuttleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlotBookingForm.Designer.vb">
+      <DependentUpon>SlotBookingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SlotBookingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Adminform.resx">
+      <DependentUpon>Adminform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatbotForm.resx">
+      <DependentUpon>ChatbotForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentTypeForm.resx">
+      <DependentUpon>EquipmentTypeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeform.resx">
+      <DependentUpon>homeform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginform.resx">
+      <DependentUpon>Loginform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profileform.resx">
+      <DependentUpon>Profileform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaquetForm.resx">
+      <DependentUpon>RaquetForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrationform.resx">
+      <DependentUpon>Registrationform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShuttleForm.resx">
+      <DependentUpon>ShuttleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlotBookingForm.resx">
+      <DependentUpon>SlotBookingForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
